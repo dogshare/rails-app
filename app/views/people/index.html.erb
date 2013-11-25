@@ -20,10 +20,8 @@
       <tr>
         <td><%= person.name %></td>
         <td><%= person.zip %></td>
-        <td><%= person.dog_owner %></td>
         <td><%= person.picture %></td>
         <td><%= person.available_to_dogsit %></td>
-        <td><%= person.needs_dogsitting %></td>
         <td><%= link_to 'Show', person %></td>
         <td><%= link_to 'Edit', edit_person_path(person) %></td>
         <td><%= link_to 'Destroy', person, method: :delete, data: { confirm: 'Are you sure?' } %></td>
