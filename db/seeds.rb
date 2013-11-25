@@ -20,3 +20,20 @@ adult_supervision = Dog.create(:name => 'Super', :age => '6', :breed => 'Greyhou
 
 # Creating sitters
 
+owner = Person.new
+owner.name = "Charlotte"
+owner.save
+
+
+sonja = Person.create(:name => "Sonja")
+charlotte = Person.create(:name => "Charlotte")
+
+
+dogshare = Dogshare.create(:dog => rocky, :sitter => sonja)
+dogshare = Dogshare.create(:dog => adult_supervision, :sitter => charlotte)
+
+# Dogshare.create(:dog => lucy,
+#                 :sitter => sitter,
+#                 :available => false)
+
+
