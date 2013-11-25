@@ -1,0 +1,49 @@
+# encoding: UTF-8
+# This file is auto-generated from the current state of the database. Instead
+# of editing this file, please use the migrations feature of Active Record to
+# incrementally modify your database, and then regenerate this schema definition.
+#
+# Note that this schema.rb definition is the authoritative source for your
+# database schema. If you need to create the application database on another
+# system, you should be using db:schema:load, not running all the migrations
+# from scratch. The latter is a flawed and unsustainable approach (the more migrations
+# you'll amass, the slower it'll run and the greater likelihood for issues).
+#
+# It's strongly recommended that you check this file into your version control system.
+
+ActiveRecord::Schema.define(version: 20131125191918) do
+
+  create_table "dogs", force: true do |t|
+    t.string   "name"
+    t.integer  "age"
+    t.string   "breed"
+    t.text     "description"
+    t.string   "temperament"
+    t.string   "active"
+    t.boolean  "housetrained"
+    t.boolean  "picture"
+    t.text     "special_needs"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "dogshares", force: true do |t|
+    t.integer  "dog_id"
+    t.integer  "sitter_id"
+    t.boolean  "available"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "people", force: true do |t|
+    t.string   "name"
+    t.integer  "zip"
+    t.boolean  "dog_owner"
+    t.boolean  "picture"
+    t.text     "available_to_dogsit"
+    t.text     "needs_dogsitting"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+end

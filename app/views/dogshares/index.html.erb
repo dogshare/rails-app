@@ -1,0 +1,31 @@
+<h1>Listing dogshares</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Dog</th>
+      <th>Sitter</th>
+      <th>Available</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @dogshares.each do |dogshare| %>
+      <tr>
+        <td><%= dogshare.dog_id %></td>
+        <td><%= dogshare.sitter_id %></td>
+        <td><%= dogshare.available %></td>
+        <td><%= link_to 'Show', dogshare %></td>
+        <td><%= link_to 'Edit', edit_dogshare_path(dogshare) %></td>
+        <td><%= link_to 'Destroy', dogshare, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Dogshare', new_dogshare_path %>

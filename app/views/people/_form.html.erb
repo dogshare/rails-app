@@ -1,0 +1,41 @@
+<%= form_for(@person) do |f| %>
+  <% if @person.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@person.errors.count, "error") %> prohibited this person from being saved:</h2>
+
+      <ul>
+      <% @person.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :zip %><br>
+    <%= f.number_field :zip %>
+  </div>
+  <div class="field">
+    <%= f.label :dog_owner %><br>
+    <%= f.check_box :dog_owner %>
+  </div>
+  <div class="field">
+    <%= f.label :picture %><br>
+    <%= f.check_box :picture %>
+  </div>
+  <div class="field">
+    <%= f.label :available_to_dogsit %><br>
+    <%= f.text_area :available_to_dogsit %>
+  </div>
+  <div class="field">
+    <%= f.label :needs_dogsitting %><br>
+    <%= f.text_area :needs_dogsitting %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

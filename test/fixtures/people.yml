@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  zip: 1
+  dog_owner: false
+  picture: false
+  available_to_dogsit: MyText
+  needs_dogsitting: MyText
+
+two:
+  name: MyString
+  zip: 1
+  dog_owner: false
+  picture: false
+  available_to_dogsit: MyText
+  needs_dogsitting: MyText

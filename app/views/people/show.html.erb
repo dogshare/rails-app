@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @person.name %>
+</p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @person.zip %>
+</p>
+
+<p>
+  <strong>Dog owner:</strong>
+  <%= @person.dog_owner %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= @person.picture %>
+</p>
+
+<p>
+  <strong>Available to dogsit:</strong>
+  <%= @person.available_to_dogsit %>
+</p>
+
+<p>
+  <strong>Needs dogsitting:</strong>
+  <%= @person.needs_dogsitting %>
+</p>
+
+<%= link_to 'Edit', edit_person_path(@person) %> |
+<%= link_to 'Back', people_path %>
