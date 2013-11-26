@@ -30,6 +30,7 @@ adult_supervision = Dog.create(:owner => ken, :name => 'Super', :age => '6', :br
 
 scott = Person.create(:name => "Scott", :zip => 11111, :available_to_dogsit => "Mondays 3-10pm")
 rosie = Person.create(:name => "Rosie", :zip => 22222, :available_to_dogsit => "Wednesdays 9-1pm")
+greg = Person.create(:name => "Greg", :zip => 10003, :available_to_dogsit => "Everyday, all day long")
 
 # Create dogshare
 

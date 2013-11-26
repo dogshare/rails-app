@@ -12,7 +12,7 @@
 
 <p>
   <strong>Dog owner:</strong>
-  <%= @person.dog_owner %>
+  <%= @person.name %>
 </p>
 
 <p>
@@ -23,11 +23,6 @@
 <p>
   <strong>Available to dogsit:</strong>
   <%= @person.available_to_dogsit %>
-</p>
-
-<p>
-  <strong>Needs dogsitting:</strong>
-  <%= @person.needs_dogsitting %>
 </p>
 
 <%= link_to 'Edit', edit_person_path(@person) %> |
