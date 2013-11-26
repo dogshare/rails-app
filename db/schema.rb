@@ -11,6 +11,8 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+ActiveRecord::Schema.define(version: 20131126152009) do
+
   create_table "dogs", force: true do |t|
     t.string   "name"
     t.integer  "age"
@@ -23,7 +25,7 @@
     t.text     "special_needs"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.text     "snippet"
+    t.text     "dog_snippet"
     t.string   "size"
     t.string   "gender"
     t.integer  "owner_id"
@@ -45,7 +47,7 @@
     t.text     "available_to_dogsit"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.text     "snippet"
+    t.text     "person_snippet"
   end
 
 end
