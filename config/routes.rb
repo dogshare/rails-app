@@ -8,10 +8,10 @@ RailsApp::Application.routes.draw do
   resources :dogs
 
 #build home/landing page
-get /index
-# click "I can dogsit" redirect to dogs that need dogsitting .../dogs
-# click "I need dog sitting" redirect to dogsitters .../dogsitters
-end
+# get /index
+# # click "I can dogsit" redirect to dogs that need dogsitting .../dogs
+# # click "I need dog sitting" redirect to dogsitters .../dogsitters
+# end
 
 
 
