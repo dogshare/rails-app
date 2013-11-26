@@ -1,19 +1,16 @@
 # how to reroute index
 
 RailsApp::Application.routes.draw do
+
   resources :dogshares
 
   resources :people
 
   resources :dogs
+ 
+  root 'dashboards#index'
 
-#build home/landing page
-# get /index
-# # click "I can dogsit" redirect to dogs that need dogsitting .../dogs
-# # click "I need dog sitting" redirect to dogsitters .../dogsitters
-# end
-
-
+  # root_path  GET   /   dashboard#index
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
