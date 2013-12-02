@@ -3,7 +3,7 @@
 </div>
 <h1>Listing dogs</h1>
 
-<table>
+<!-- <table>
   <thead>
     <tr>
       <th>Name</th>
@@ -19,23 +19,23 @@
       <th></th>
       <th></th>
     </tr>
-  </thead>
+  </thead> -->
 
   <tbody>
     <% @dogs.each do |dog| %>
       <tr>
-        <td><%= dog.name %></td>
-        <td><%= dog.age %></td>
-        <td><%= dog.breed %></td>
-        <td><%= dog.description %></td>
-        <td><%= dog.temperament %></td>
-        <td><%= dog.active %></td>
-        <td><%= dog.housetrained %></td>
-        <td><%= dog.picture %></td>
-        <td><%= dog.special_needs %></td>
-        <td><%= link_to 'Show', dog %></td>
-        <td><%= link_to 'Edit', edit_dog_path(dog) %></td>
-        <td><%= link_to 'Destroy', dog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><% dog.name %></td>
+        <td><% dog.age %></td>
+        <td><% dog.breed %></td>
+        <td><% dog.description %></td>
+        <td><% dog.temperament %></td>
+        <td><% dog.active %></td>
+        <td><% dog.housetrained %></td>
+        <td><% dog.picture %></td>
+        <td><% dog.special_needs %></td>
+        <td><% link_to 'Show', dog %></td>
+        <td><% link_to 'Edit', edit_dog_path(dog) %></td>
+        <td><% link_to 'Destroy', dog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -43,7 +43,7 @@
 
 <br>
 
-<%= link_to 'New Dog', new_dog_path %>
+<%= link_to 'Register Your Dog!', new_dog_path %><br><br>
 
  <div class="container marketing">
 
