@@ -15,7 +15,7 @@ ken = Person.create(:name => "Ken", :zip => 11221)
 
 # Creating dogs and associating owners
 
-rocky = Dog.create(:owner => charlotte, :name => "Rocky", :age => 3, :breed => "Puggle", :description => "athletic little monster", :temperament => "adorable, crazy, stubborn", :active => "very active", :housetrained => true, :picture => true, :special_needs => "none", :dog_snippet => "I'm the Buster Keaton of dogs!") 
+rocky = Dog.create(:owner => charlotte, :name => "Rocky", :age => 3, :breed => "Puggle", :description => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", :temperament => "adorable, crazy, stubborn", :active => "very active", :housetrained => true, :picture => true, :special_needs => "none", :dog_snippet => "athletic little monster!") 
 
 lucy = Dog.create(:owner => sonja, :name => "Lucyhawk", :age => 3, :breed => "Kangal", :description => "independent-minded strong girl", :temperament => "difficult with very submissive dogs, sometimes aggressive", :active => "very active", :housetrained => true, :picture => true, :special_needs => "anxiety medication", :dog_snippet => "I'm a loyal companion.")
 
