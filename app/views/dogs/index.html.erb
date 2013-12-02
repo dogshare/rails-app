@@ -10,7 +10,7 @@
         <td><% dog.temperament %></td>
         <td><% dog.active %></td>
         <td><% dog.housetrained %></td>
-        <td><%= image_tag @dog.avatar.url(:thumb) %></td>
+        <td><% dog.img.url(:thumb) %></td>
         <td><% dog.special_needs %></td>
         <td><% link_to 'Show', dog %></td>
         <td><% link_to 'Edit', edit_dog_path(dog) %></td>

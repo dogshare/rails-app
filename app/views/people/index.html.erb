@@ -20,7 +20,7 @@
       <tr>
         <td><%= person.name %></td>
         <td><%= person.zip %></td>
-        <td><%= image_tag @person.avatar.url(:thumb) %></td>
+        <td><%= image_tag person.img.url(:thumb) %></td>
         <td><%= person.available_to_dogsit %></td>
         <td><%= link_to 'Show', person %></td>
         <td><%= link_to 'Edit', edit_person_path(person) %></td>
