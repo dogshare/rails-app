@@ -1,23 +1,5 @@
 <link href="../assets/stylesheets/bootstrap.css" rel="stylesheet">
 
-<!-- <table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Age</th>
-      <th>Breed</th>
-      <th>Description</th>
-      <th>Temperament</th>
-      <th>Active</th>
-      <th>Housetrained</th>
-      <th>Picture</th>
-      <th>Special needs</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead> -->
-
   <tbody>
     <% @dogs.each do |dog| %>
       <tr>
@@ -40,26 +22,21 @@
 
 <br>
 
-<%= link_to 'Register Your Dog!', new_dog_path %><br><br>
+<p><a class="btn btn-default" href="<%= new_dog_path %>" role="button">Register Your Dog!</a></p>
 
 <div class="container marketing">
-  <div class="row">
-  <% @dogs.each do |dog| %>
-    <div class="col-lg-4">
-      <%= image_tag @dog.avatar.url(:thumb) %>
-      <img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
-      <%= image_tag @user.avatar.url(:thumb) %>
-      <h2><%= dog.name %></h2>
-      <p><%= dog.dog_snippet %></p>
-      <!-- <p><a class="btn btn-default" href="/dogs/id" role="button">View more</a></p> -->
-      <%= link_to 'View More', dog, class:"btn btn-default" %> 
-    </div><!-- /.col-lg-4 -->
-  <% end %>
+  <% count = 0 %>
+  <% @dogs.each_slice(3) do |slice| %>
+    <div class="row">
+      <% slice.each do |dog| %>
+        <div class="col-lg-4 dog">
+          <img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
+          <h2><%= dog.name %></h2>
+          <p><%= dog.dog_snippet %></p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      <% end %>
   </div><!-- /.row -->
+  <% end %>
 </div>
 
-        
-     
-
-
-      

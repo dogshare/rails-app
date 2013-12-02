@@ -19,7 +19,7 @@ rocky = Dog.create(:owner => charlotte, :name => "Rocky", :age => 3, :breed => "
 
 lucy = Dog.create(:owner => sonja, :name => "Lucyhawk", :age => 3, :breed => "Kangal", :description => "independent-minded strong girl", :temperament => "difficult with very submissive dogs, sometimes aggressive", :active => "very active", :housetrained => true, :picture => true, :special_needs => "anxiety medication", :dog_snippet => "I'm a loyal companion.")
 
-pesh = Dog.create(:owner => evan, :name => "Peshmerga", :age => 4, :breed => "Kangal", :description => "huge, happy-go-lucky, protective dog", :temperament => "goofy and disobedient", :active => "somewhat active", :housetrained => true, :picture => true, :special_needs => "vegetarian; poultry allergies", :dog_snippet => "I love walks and meeting new people!")
+pesh = Dog.create(:owner => evan, :name => "Peshmerga", :age => 4, :breed => "Kangal", :description => "huge, happy-go-lucky, protective dog", :temperament => "goofy and disobedient", :active => "somewhat active", :housetrained => true, :picture => true, :special_needs => "vegetarian; poultry allergies", :dog_snippet => "I love walks and meeting new people! asjdbasuhd;aishd  ashf;auhsf;iauh  f;iauhf;iauh  jaahsfauhsf")
 
 lester = Dog.create(:owner => sonja, :name => 'Lester', :age => '3', :breed => 'Black and Tan Coonhound', :description => 'super lovable, easy going', :temperament =>'energetic and happy', :active => 'very', :housetrained => true, :picture => true, :special_needs => 'none', :dog_snippet => "I can see for miles!")
 
