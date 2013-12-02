@@ -43,42 +43,25 @@
 
 <br>
 
-<%= link_to 'Register Your Dog!', new_dog_path %><br><br>
+<p><a class="btn btn-default" href="<%= new_dog_path %>" role="button">Register Your Dog!</a></p>
 
- <div class="container marketing">
-<% @dogs.each do |dog| %>
-      <div class="row">
-        <div class="col-lg-4">
+
+
+<div class="container marketing">
+
+  <% count = 0 %>
+  <% @dogs.each_slice(3) do |slice| %>
+    <div class="row">
+      <% slice.each do |dog| %>
+        <div class="col-lg-4 dog">
           <img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
           <h2><%= dog.name %></h2>
           <p><%= dog.dog_snippet %></p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-          <% @dogs.pop %>
-          <% end %>
         </div><!-- /.col-lg-4 -->
-
-        <div class="col-lg-4">
-          <% @dogs.each do |dog| %>
-          <img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
-          <h2><%= dog.name %></h2>
-          <p><%= dog.dog_snippet %></p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-          <% @dogs.pop %>
-          <% end %>
-        </div><!-- /.col-lg-4 -->
-
-        <div class="col-lg-4">
-          <% @dogs.each do |dog| %>
-          <img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
-          <h2><%= dog.name %></h2>
-          <p><%= dog.dog_snippet %></p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-          <% @dogs.pop %>
-          <% end %>
-        </div><!-- /.col-lg-4 -->
-        
-      </div><!-- /.row -->
+      <% end %>
+  </div><!-- /.row -->
+  <% end %>
 </div>
 
-
-      
+    

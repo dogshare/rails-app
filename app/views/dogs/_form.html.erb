@@ -39,16 +39,6 @@
     <%= f.label :housetrained %><br>
     <%= f.check_box :housetrained %>
   </div>
-  <div class="field">
-    <%= f.label :picture %><br>
-    <%= f.check_box :picture %>
-  </div>
-
-  <% form_for @product, :html => { :multipart => true } do |f| %>
-  ...
-  <%= f.file_field :photo %>
-  ...
-<% end %>
 
   <div class="field">
     <%= f.label :special_needs %><br>
