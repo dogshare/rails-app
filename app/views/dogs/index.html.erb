@@ -1,27 +1,5 @@
 <link href="../assets/stylesheets/bootstrap.css" rel="stylesheet">
 
-  <tbody>
-    <% @dogs.each do |dog| %>
-      <tr>
-        <td><% dog.name %></td>
-        <td><% dog.age %></td>
-        <td><% dog.breed %></td>
-        <td><% dog.description %></td>
-        <td><% dog.temperament %></td>
-        <td><% dog.active %></td>
-        <td><% dog.housetrained %></td>
-        <td><% dog.img.url(:thumb) %></td>
-        <td><% dog.special_needs %></td>
-        <td><% link_to 'Show', dog %></td>
-        <td><% link_to 'Edit', edit_dog_path(dog) %></td>
-        <td><% link_to 'Destroy', dog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
 <p><a class="btn btn-default" href="<%= new_dog_path %>" role="button">Register Your Dog!</a></p>
 
 <div class="container marketing">
@@ -30,10 +8,11 @@
     <div class="row">
       <% slice.each do |dog| %>
         <div class="col-lg-4 dog">
+          <% dog.img.url(:thumb) %>
           <img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
           <h2><%= dog.name %></h2>
           <p><%= dog.dog_snippet %></p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-default" href="<%= dog_path(dog) %>" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       <% end %>
   </div><!-- /.row -->
