@@ -1,35 +1,21 @@
-<h1>Listing people</h1>
+<link href="../assets/stylesheets/bootstrap.css" rel="stylesheet">
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Zip</th>
-      <th>Dog owner</th>
-      <th>Picture</th>
-      <th>Available to dogsit</th>
-      <th>Needs dogsitting</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
+<p><a class="btn btn-default" href="<%= new_person_path %>" role="button">I'm a new doglover</a></p>
 
-  <tbody>
-    <% @people.each do |person| %>
-      <tr>
-        <td><%= person.name %></td>
-        <td><%= person.zip %></td>
-        <td><%= image_tag person.img.url(:thumb) %></td>
-        <td><%= person.available_to_dogsit %></td>
-        <td><%= link_to 'Show', person %></td>
-        <td><%= link_to 'Edit', edit_person_path(person) %></td>
-        <td><%= link_to 'Destroy', person, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<div class="container marketing">
+  <% count = 0 %>
+  <% @people.each_slice(3) do |slice| %>
+    <div class="row">
+      <% slice.each do |person| %>
+        <div class="col-lg-4 dog">
+          <% person.img.url(:thumb) %>
+          <img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
+          <h2><%= person.name %></h2>
+          <p><%= person.person_snippet %></p>
+          <p><a class="btn btn-default" href="<%= person_path(person) %>" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      <% end %>
+  </div><!-- /.row -->
+  <% end %>
+</div>
 
-<br>
-
-<%= link_to 'New Person', new_person_path %>
