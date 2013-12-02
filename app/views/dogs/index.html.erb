@@ -1,6 +1,6 @@
-<div class="well">
-  
-</div>
+
+<link href="../assets/stylesheets/bootstrap.css" rel="stylesheet">
+
 <h1>Listing dogs</h1>
 
 <!-- <table>
@@ -46,11 +46,9 @@
 <%= link_to 'Register Your Dog!', new_dog_path %><br><br>
 
  <div class="container marketing">
-
-      <!-- Three columns of text below the carousel -->
+<% @dogs.each do |dog| %>
       <div class="row">
         <div class="col-lg-4">
-          <% @dogs.each do |dog| %>
           <img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
           <h2><%= dog.name %></h2>
           <p><%= dog.dog_snippet %></p>
