@@ -43,12 +43,11 @@
     <%= f.label :picture %><br>
     <%= f.check_box :picture %>
   </div>
+   <div class="field">
+    <%= f.label :dog_snippet %><br>
+    <%= f.text_field :dog_snippet %>
+  </div>
 
-  <% form_for @product, :html => { :multipart => true } do |f| %>
-  ...
-  <%= f.file_field :photo %>
-  ...
-<% end %>
 
   <div class="field">
     <%= f.label :special_needs %><br>

@@ -1,56 +1,64 @@
 <p id="notice"><%= notice %></p>
 
 <div class="center">
-<img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
-<h2><%= @dog.name %></h2>
-<p><em><%= @dog.dog_snippet %></em></p>
+  <img class="img-circle" data-src="holder.js/280x280" alt="Generic placeholder image">
+  <h2><%= @dog.name %></h2>
+  <p><em><%= @dog.dog_snippet %></em></p>
 </div>
 
 <br>
-<p>
-  <strong>Owner Name:</strong>
-  <%= @dog.owner_id %>
-</p>
 
-<p>
+<div class="bio">
+  <img class="img-circle" data-src="holder.js/120x120" alt="Generic placeholder image">  
+  <p>
+    <strong>Owner Name:</strong>
+    <%= @dog.owner_id %>
+  </p>
+  <p>
   <strong>Age:</strong>
   <%= @dog.age %>
-</p>
+  </p>
+  <p>
+    <strong>Breed:</strong>
+    <%= @dog.breed %>
+  </p>
 
-<p>
-  <strong>Breed:</strong>
-  <%= @dog.breed %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @dog.description %>
-</p>
-
-<p>
-  <strong>Temperament:</strong>
-  <%= @dog.temperament %>
-</p>
-
-<p>
-  <strong>Active:</strong>
-  <%= @dog.active %>
-</p>
-
-<p>
+  <p>
   <strong>Housetrained:</strong>
   <%= @dog.housetrained %>
 </p>
+</div>
 
-<p>
-  <strong>Picture:</strong>
-  <%= @dog.picture %>
-</p>
 
-<p>
-  <strong>Special needs:</strong>
-  <%= @dog.special_needs %>
-</p>
+<div class="main">
+  <p>
+    <strong>Description:</strong>
+    <%= @dog.description %>
+  </p>
+
+  <p>
+    <strong>Temperament:</strong>
+    <%= @dog.temperament %>
+  </p>
+
+  <p>
+    <strong>Active:</strong>
+    <%= @dog.active %>
+  </p>
+
+  <p>
+    <strong>Special needs:</strong>
+    <%= @dog.special_needs %>
+  </p>
+
+
+  <p>
+    <strong>Picture:</strong>
+    <%= @dog.picture %>
+  </p>
+
+</div>
+
 
 <%= link_to 'Edit', edit_dog_path(@dog) %> |
 <%= link_to 'Back', dogs_path %>
