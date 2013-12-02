@@ -11,6 +11,10 @@
     </div>
   <% end %>
 
+   <%= form_for @person, :url => people_path, :html => { :multipart => true } do |form| %>
+  <%= form.file_field :img %>
+  <% end %>
+
   <div class="field">
     <%= f.label :name %><br>
     <%= f.text_field :name %>
@@ -19,10 +23,7 @@
     <%= f.label :zip %><br>
     <%= f.number_field :zip %>
   </div>
-  <div class="field">
-    <%= f.label :picture %><br>
-    <%= f.check_box :picture %>
-  </div>
+ 
   <div class="field">
     <%= f.label :available_to_dogsit %><br>
     <%= f.text_area :available_to_dogsit %>

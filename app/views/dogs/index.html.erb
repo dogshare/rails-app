@@ -28,7 +28,7 @@
         <td><% dog.temperament %></td>
         <td><% dog.active %></td>
         <td><% dog.housetrained %></td>
-        <td><% dog.picture %></td>
+        <td><%= image_tag @dog.avatar.url(:thumb) %></td>
         <td><% dog.special_needs %></td>
         <td><% link_to 'Show', dog %></td>
         <td><% link_to 'Edit', edit_dog_path(dog) %></td>
@@ -46,7 +46,9 @@
   <div class="row">
   <% @dogs.each do |dog| %>
     <div class="col-lg-4">
+      <%= image_tag @dog.avatar.url(:thumb) %>
       <img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
+      <%= image_tag @user.avatar.url(:thumb) %>
       <h2><%= dog.name %></h2>
       <p><%= dog.dog_snippet %></p>
       <!-- <p><a class="btn btn-default" href="/dogs/id" role="button">View more</a></p> -->
@@ -57,7 +59,7 @@
 </div>
 
         
-    
+     
 
 
       

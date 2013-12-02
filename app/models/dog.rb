@@ -1,8 +1,9 @@
 class Dog < ActiveRecord::Base
   belongs_to :owner, :class_name => "Person"
   has_many :sitters, :through => :dogshares, :class_name => "Person"
-
   has_many :dogshares
+
+  has_attached_file :img, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "/images/:style/missing.png"
 
   # has_attached_file :photo, :styles => { :small => "150x150>" },
   #                 :url  => "/assets/products/:id/:style/:basename.:extension",

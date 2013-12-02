@@ -39,6 +39,7 @@ class DogsController < ApplicationController
 
   # PATCH/PUT /dogs/1
   # PATCH/PUT /dogs/1.json
+  
   def update
     respond_to do |format|
       if @dog.update(dog_params)
@@ -69,6 +70,12 @@ class DogsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def dog_params
-      params.require(:dog).permit(:name, :age, :breed, :description, :temperament, :active, :housetrained, :picture, :special_needs)
+      params.require(:dog).permit(:img, :name, :age, :breed, :description, :temperament, :active, :housetrained, :picture, :special_needs)
     end
 end
+
+
+
+
+
+
