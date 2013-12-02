@@ -46,7 +46,6 @@
 <%= link_to 'Register Your Dog!', new_dog_path %><br><br>
 
  <div class="container marketing">
-
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4">
@@ -55,7 +54,40 @@
           <h2><%= dog.name %></h2>
           <p><%= dog.dog_snippet %></p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <% @dogs.pop %>
           <% end %>
+        </div><!-- /.col-lg-4 -->
+
+        <div class="col-lg-4">
+          <% @dogs.each do |dog| %>
+          <img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
+          <h2><%= dog.name %></h2>
+          <p><%= dog.dog_snippet %></p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <% @dogs.pop %>
+          <% end %>
+        </div><!-- /.col-lg-4 -->
+
+        <div class="col-lg-4">
+          <% @dogs.each do |dog| %>
+          <img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
+          <h2><%= dog.name %></h2>
+          <p><%= dog.dog_snippet %></p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <% @dogs.pop %>
+          <% end %>
+        </div><!-- /.col-lg-4 -->
+        
+      </div><!-- /.row -->
+</div>
+
+<!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
@@ -70,6 +102,7 @@
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
+
 
 
       
