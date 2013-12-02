@@ -10,6 +10,8 @@ RailsApp::Application.routes.draw do
  
   root 'dashboards#index'
 
+  
+
   # root_path  GET   /   dashboard#index
 
   # The priority is based upon order of creation: first created -> highest priority.
