@@ -15,15 +15,15 @@ ken = Person.create(:name => "Ken", :zip => 11221)
 
 # Creating dogs and associating owners
 
-rocky = Dog.create(:owner => charlotte, :name => "Rocky", :age => 3, :breed => "Puggle", :description => "athletic little monster", :temperament => "adorable, crazy, stubborn", :active => "very active", :housetrained => true, :picture => true, :special_needs => "none") 
+rocky = Dog.create(:owner => charlotte, :name => "Rocky", :age => 3, :breed => "Puggle", :description => "athletic little monster", :temperament => "adorable, crazy, stubborn", :active => "very active", :housetrained => true, :picture => true, :special_needs => "none", :dog_snippet => "I'm the Buster Keaton of dogs!") 
 
-lucy = Dog.create(:owner => sonja, :name => "Lucyhawk", :age => 3, :breed => "Kangal", :description => "independent-minded strong girl", :temperament => "difficult with very submissive dogs, sometimes aggressive", :active => "very active", :housetrained => true, :picture => true, :special_needs => "anxiety medication")
+lucy = Dog.create(:owner => sonja, :name => "Lucyhawk", :age => 3, :breed => "Kangal", :description => "independent-minded strong girl", :temperament => "difficult with very submissive dogs, sometimes aggressive", :active => "very active", :housetrained => true, :picture => true, :special_needs => "anxiety medication", :dog_snippet => "I'm a loyal companion.")
 
-pesh = Dog.create(:owner => evan, :name => "Peshmerga", :age => 4, :breed => "Kangal", :description => "huge, happy-go-lucky, protective dog", :temperament => "goofy and disobedient", :active => "somewhat active", :housetrained => true, :picture => true, :special_needs => "vegetarian; poultry allergies")
+pesh = Dog.create(:owner => evan, :name => "Peshmerga", :age => 4, :breed => "Kangal", :description => "huge, happy-go-lucky, protective dog", :temperament => "goofy and disobedient", :active => "somewhat active", :housetrained => true, :picture => true, :special_needs => "vegetarian; poultry allergies", :dog_snippet => "I love walks and meeting new people!")
 
-lester = Dog.create(:owner => sonja, :name => 'Lester', :age => '3', :breed => 'Black and Tan Coonhound', :description => 'super lovable, easy going', :temperament =>'energetic and happy', :active => 'very', :housetrained => true, :picture => true, :special_needs => 'none')
+lester = Dog.create(:owner => sonja, :name => 'Lester', :age => '3', :breed => 'Black and Tan Coonhound', :description => 'super lovable, easy going', :temperament =>'energetic and happy', :active => 'very', :housetrained => true, :picture => true, :special_needs => 'none', :dog_snippet => "I can see for miles!")
 
-adult_supervision = Dog.create(:owner => ken, :name => 'Super', :age => '6', :breed => 'Greyhound', :description => 'aloof, loves napping', :temperament => 'reserved', :active => 'when he wants to be', :housetrained => true, :picture => true, :special_needs => 'none')
+adult_supervision = Dog.create(:owner => ken, :name => 'Super', :age => '6', :breed => 'Greyhound', :description => 'aloof, loves napping', :temperament => 'reserved', :active => 'when he wants to be', :housetrained => true, :picture => true, :special_needs => 'none', :dog_snippet => "I run circles around all the cool kids!")
 
 
 # Creating sitters
