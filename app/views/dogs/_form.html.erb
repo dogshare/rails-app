@@ -11,10 +11,10 @@
     </div>
   <% end %>
 
-  <%= form_for @dog, :url => dogs_path, :html => { :multipart => true } do |form| %>
-  <%= form.file_field :img %>
-  <% end %>
-  <br>
+  <div class="field">
+    <%= f.label :Upload_an_image %><br>
+    <%= f.file_field :img %>
+  </div>
   
   <div class="field">
     <%= f.label :name %><br>

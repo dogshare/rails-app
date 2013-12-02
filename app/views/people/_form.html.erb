@@ -11,9 +11,10 @@
     </div>
   <% end %>
 
-   <%= form_for @person, :url => people_path, :html => { :multipart => true } do |form| %>
-  <%= form.file_field :img %>
-  <% end %>
+  <div class="field">
+    <%= f.label :Upload_an_image %><br>
+    <%= f.file_field :img %>
+  </div>
 
   <div class="field">
     <%= f.label :name %><br>
@@ -29,6 +30,6 @@
     <%= f.text_area :available_to_dogsit %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit  %>
   </div>
 <% end %>
