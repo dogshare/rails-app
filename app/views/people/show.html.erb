@@ -1,9 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <%= image_tag @person.img.url %>
-  <%= image_tag @person.img.url(:medium) %>
-  <%= image_tag @person.img.url(:thumb) %>
+  <%= image_tag(@person.img.url(:medium), :class => "img-circle") %>
 </p>
 
 <p>

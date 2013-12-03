@@ -1,8 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <div class="center">
-  <img class="img-circle" data-src="holder.js/280x280" alt="Generic placeholder image">
-  <%= @dog.img.url(:medium) %>
+  <%= image_tag(@dog.img.url(:medium), :class => "img-circle") %>
   <h2><%= @dog.name %></h2>
   <p><em><%= @dog.dog_snippet %></em></p>
 </div>
@@ -10,10 +9,10 @@
 <br>
 
 <div class="bio">
-  <img class="img-circle" data-src="holder.js/120x120" alt="Generic placeholder image">  
+  <%= image_tag(@dog.owner.img.url(:thumb), :class => "img-circle") %>
   <p>
     <strong>Owner Name:</strong>
-    <%= @dog.owner_id %>
+    <%= @dog.owner.name %>
   </p>
   <p>
   <strong>Age:</strong>
@@ -23,11 +22,14 @@
     <strong>Breed:</strong>
     <%= @dog.breed %>
   </p>
-
   <p>
   <strong>Housetrained:</strong>
   <%= @dog.housetrained %>
-</p>
+  </p>
+  <p>
+    <strong>Zip:</strong>
+    <%= @dog.owner.zip %>
+  </p>
 </div>
 
 
