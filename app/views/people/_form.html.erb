@@ -23,12 +23,18 @@
     <%= f.label :zip %><br>
     <%= f.number_field :zip %>
   </div>
+
+  <! -- datetime picker -->
  
   <div class="input-append date" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
     <%= f.label :available_from %><br>
     <input class="span2" size="16" id="dp3" type="text" value="12-02-2012">
     <span class="add-on"><i class="icon-th"></i></span>
   </div>
+
+  <!-- time picker bootstrap -->
+
+  <!-- end time picker bootstrap -->
 
   <div class="actions">
     <%= f.submit  %>
