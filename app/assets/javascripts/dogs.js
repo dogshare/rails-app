@@ -1,6 +1,6 @@
 $(function() {
-  $('#dp1').datepicker();
-  $('#dp2').datepicker();
+  $('#dp3').datepicker();
+  $('#dp4').datepicker();
 
   //event listener then start and end date validation//
 
@@ -12,5 +12,3 @@ $(function() {
   // });
 
 });
-
-

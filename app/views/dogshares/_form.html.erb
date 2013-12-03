@@ -19,10 +19,21 @@
     <%= f.label :sitter_id %><br>
     <%= f.number_field :sitter_id %>
   </div>
-  <div class="field">
-    <%= f.label :available %><br>
-    <%= f.check_box :available %>
+
+<div class="input-prepend date" data-date=" " data-date-format="dd-mm-yyyy">
+    <%= f.label :available_start %><br>
+    <input class="col-md-2" id="dp3" size="16" type="text" value=" " name="dogshare[available_day_start]">
+    <span class="add-on"><i class="icon-th"></i></span>
   </div>
+  <br>
+
+  <div class="input-append date" data-date=" " data-date-format="dd-mm-yyyy">
+    <%= f.label :available_end %><br>
+    <input class="col-md-2" id="dp4" size="16" type="text" value=" " name="dogshare[available_day_end]">
+    <span class="add-on"><i class="icon-th"></i></span>
+  </div>
+<br>
+<br>
   <div class="actions">
     <%= f.submit %>
   </div>

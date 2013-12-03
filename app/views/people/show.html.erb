@@ -20,10 +20,11 @@
 </p>
 
 <p>
-  <strong>Available to dogsit:</strong>
-  <%= @person.available_start %>
+  <strong>Available from:</strong>  
+  <%= @person.available_start %><br>
+  <strong>Available to:</strong>
   <%= @person.available_end %>
 </p>
 
-<%= link_to 'Edit', edit_person_path(@person) %> |
+<%= link_to 'Edit', edit_person_path(@person) %>
 <%= link_to 'Back', people_path %>

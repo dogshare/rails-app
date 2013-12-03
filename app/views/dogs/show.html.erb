@@ -6,8 +6,6 @@
   <p><em><%= @dog.dog_snippet %></em></p>
 </div>
 
-<br>
-
 <div class="bio">
   <%= image_tag(@dog.owner.img.url(:thumb), :class => "img-circle") %>
   <p>
@@ -30,6 +28,14 @@
     <strong>Zip:</strong>
     <%= @dog.owner.zip %>
   </p>
+
+<!-- add for each dog share -->
+  <p>
+    <strong>Available from:</strong>
+    <%= @dog.dogshares.first.available_day_start %><br>
+    <strong>Available to:</strong>
+    <%= @dog.dogshares.first.available_day_end %>
+
 </div>
 
 <div class="main">
@@ -57,6 +63,7 @@
 
 </div>
 
-
 <%= link_to 'Edit', edit_dog_path(@dog) %> |
 <%= link_to 'Back', dogs_path %>
+<%= link_to 'Add a dogshare', new_dogshare_path %>
+
