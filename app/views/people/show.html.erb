@@ -20,13 +20,9 @@
 </p>
 
 <p>
-  <strong>Picture:</strong>
-  <%= @person.picture %>
-</p>
-
-<p>
   <strong>Available to dogsit:</strong>
-  <%= @person.available_to_dogsit %>
+  <%= @person.available_start %>
+  <%= @person.available_end %>
 </p>
 
 <%= link_to 'Edit', edit_person_path(@person) %> |

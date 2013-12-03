@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131202205644) do
+ActiveRecord::Schema.define(version: 20131203023916) do
 
   create_table "dogs", force: true do |t|
     t.string   "name"
@@ -48,7 +48,6 @@ ActiveRecord::Schema.define(version: 20131202205644) do
     t.string   "name"
     t.integer  "zip"
     t.boolean  "picture"
-    t.text     "available_to_dogsit"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.text     "person_snippet"
@@ -56,6 +55,8 @@ ActiveRecord::Schema.define(version: 20131202205644) do
     t.string   "img_content_type"
     t.integer  "img_file_size"
     t.datetime "img_updated_at"
+    t.datetime "available_start"
+    t.datetime "available_end"
   end
 
 end
