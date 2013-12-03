@@ -69,6 +69,6 @@ class DogsharesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def dogshare_params
-      params.require(:dogshare).permit(:dog_id, :sitter_id, :available)
+      params.require(:dogshare).permit(:dog_id, :sitter_id, :available_day_start, :available_day_end)
     end
 end

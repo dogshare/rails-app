@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131203023916) do
+ActiveRecord::Schema.define(version: 20131203191054) do
 
   create_table "dogs", force: true do |t|
     t.string   "name"
@@ -41,7 +41,8 @@ ActiveRecord::Schema.define(version: 20131203023916) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "owner_id"
-    t.string   "need_days_times"
+    t.date     "available_day_start", limit: 255
+    t.date     "available_day_end"
   end
 
   create_table "people", force: true do |t|
@@ -55,8 +56,8 @@ ActiveRecord::Schema.define(version: 20131203023916) do
     t.string   "img_content_type"
     t.integer  "img_file_size"
     t.datetime "img_updated_at"
-    t.datetime "available_start"
-    t.datetime "available_end"
+    t.date     "available_start"
+    t.date     "available_end"
   end
 
 end
