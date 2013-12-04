@@ -11,7 +11,8 @@
         <div class="col-lg-4 dog">
           <%= image_tag(dog.img.url(:thumb), :class => "img-circle") %>
           <h2><%= dog.name %></h2>
-          <p><%= dog.dog_snippet %></p>
+          <p><b>Owner:</b> <%= dog.owner.name %></p>
+          <p><em><%= dog.dog_snippet %></em></p>
           <p><a class="btn btn-default" href="<%= dog_path(dog) %>" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       <% end %>
