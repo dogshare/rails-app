@@ -26,7 +26,7 @@ ken = Person.create(:name => "Ken",
   :zip => 11221,
   :person_snippet => "Super is my greyhound who would love you to take him for runs while I work!",
   :bio => "We live in Brooklyn and both of us enjoy road trips, running on beaches, and long naps.",
-  :img => "")
+  :img => File.new("#{Rails.root}/db/demodata/profileken.jpg"))
 
 # Creating sitters
 rosie = Person.create(:name => "Rosie", 
@@ -104,14 +104,14 @@ adult_supervision = Dog.create(:owner => ken,
   :name => 'Super', 
   :age => '6', 
   :breed => 'Greyhound', 
-  :description => 'aloof, loves napping', 
+  :description => 'Greyhounds were bred for thousands of years to hunt and prey. There is evidence of a Greyhound like dog dating back to 6000 B.C. in Turkey. However, in ancient Egypt, is where Greyhounds made their mark. Not only were the dogs hunting partners, they were also companions that were particularly worshiped by the Egyptians. The Greyhounds were mummified and buried along with their owners. They are the only breed of dog mentioned in the Bible.', 
   :temperament => 'reserved', 
   :active => 'when he wants to be', 
   :housetrained => true, 
   :picture => true, 
   :special_needs => 'none', 
   :dog_snippet => "I run circles around all the cool kids!", 
-  :img => "", 
+  :img => File.new("#{Rails.root}/db/demodata/profilesuper.jpg"), 
   :available_start => "", 
   :available_end => "")
 
