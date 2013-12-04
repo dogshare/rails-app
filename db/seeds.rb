@@ -7,15 +7,24 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 # Creating owners
-charlotte = Person.create(:name => "Charlotte", :zip => 11222, :img => File.new("#{Rails.root}/db/demodata/profilecc.jpg"))
-sonja = Person.create(:name => "Sonja", :zip => 22306, :bio => "There once was a man from Nantucket
-Who kept all his cash in a bucket.
+charlotte = Person.create(:name => "Charlotte", 
+  :zip => 11222, 
+  :img => File.new("#{Rails.root}/db/demodata/profilecc.jpg"))
+sonja = Person.create(:name => "Sonja", 
+  :zip => 22306, 
+  :bio => "There once was a man from Nantucket
+    Who kept all his cash in a bucket.
     But his daughter, named Nan,
     Ran away with a man
-And as for the bucket, Nantucket.")
-evan = Person.create(:name => "Evan", :snippet => "You only live once, but if you do it right, once is enough. 
-― Mae West" :zip => 22306)
-ken = Person.create(:name => "Ken", :zip => 11221)
+    And as for the bucket, Nantucket.",
+  :img => File.new("#{Rails.root}/db/demodata/profilecc.jpg"))
+evan = Person.create(:name => "Evan", 
+  :snippet => "You only live once, but if you do it right, once is enough. ― Mae West", 
+  :zip => 22306,
+  :img => File.new("#{Rails.root}/db/demodata/profilecc.jpg"))
+ken = Person.create(:name => "Ken", 
+  :zip => 11221,
+  :img => "")
 
 # Creating owners
 
