@@ -65,7 +65,8 @@ rocky = Dog.create(:owner => charlotte,
   :dog_snippet => "athletic little monster!", 
   :img => File.new("#{Rails.root}/db/demodata/profilerocky.jpg"), 
   :available_start => "2013-05-12", 
-  :available_end => "2014-01-05") 
+  :available_end => "2014-01-05",
+  :owner_id => "1") 
 
 lucy = Dog.create(:owner => sonja, 
   :name => "Lucyhawk", 
@@ -80,7 +81,8 @@ lucy = Dog.create(:owner => sonja,
   :dog_snippet => "I'm a loyal companion.", 
   :img => File.new("#{Rails.root}/db/demodata/profilelucy.jpg"),
   :available_start => "2013-05-12", 
-  :available_end => "2014-01-05")
+  :available_end => "2014-01-05",
+  :owner_id => "2")
 
 pesh = Dog.create(:owner => evan, 
   :name => "Peshmerga", 
@@ -95,7 +97,8 @@ pesh = Dog.create(:owner => evan,
   :dog_snippet => "I love long walks throughout New Mexico.", 
   :img => File.new("#{Rails.root}/db/demodata/profilepesh.jpg"),
   :available_start => "2013-05-12", 
-  :available_end => "2014-01-05")
+  :available_end => "2014-01-05",
+  :owner_id => "3")
 
 lester = Dog.create(:owner => sonja, 
   :name => 'Lester', 
@@ -110,7 +113,8 @@ lester = Dog.create(:owner => sonja,
   :dog_snippet => "I see with my nose.", 
   :img => File.new("#{Rails.root}/db/demodata/profilelester.jpg"), 
   :available_start => "2013-05-12", 
-  :available_end => "2014-01-05")
+  :available_end => "2014-01-05",
+  :owner_id => "2")
 
 adult_supervision = Dog.create(:owner => ken, 
   :name => 'Super', 
@@ -125,7 +129,8 @@ adult_supervision = Dog.create(:owner => ken,
   :dog_snippet => "I run circles around all the cool kids!", 
   :img => "", 
   :available_start => "2013-05-12", 
-  :available_end => "2014-01-05")
+  :available_end => "2014-01-05",
+  :owner_id => "4")
 
 
 
