@@ -28,13 +28,13 @@
     <strong>Zip:</strong>
     <%= @dog.owner.zip %>
   </p>
-
-<!-- add for each dog share -->
   <p>
     <strong>Available from:</strong>
-    <%= @dog.dogshares.first.available_day_start %><br>
+    <%= @dog.available_start %><br>
+  <p>
     <strong>Available to:</strong>
-    <%= @dog.dogshares.first.available_day_end %>
+    <%= @dog.available_end %>
+  </p>
 </div>
 
 <div class="main">
@@ -63,6 +63,6 @@
 </div>
 
 <%= link_to 'Edit', edit_dog_path(@dog) %> |
-<%= link_to 'Back', dogs_path %> |
-<%= link_to 'Add availability', new_dogshare_path %>
+<%= link_to 'Back', dogs_path %>
+
 
