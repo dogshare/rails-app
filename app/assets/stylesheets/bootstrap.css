@@ -4586,6 +4586,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   }
   .navbar-right {
     float: right !important;
+    padding-right: 30px;
   }
 }
 
