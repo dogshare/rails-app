@@ -52,14 +52,19 @@
     <%= f.label :special_needs %><br>
     <%= f.text_area :special_needs %>
   </div>
-  <div class="field">
-    <%= f.label :available_start%><br>
-    <%= f.text_area :available_start %>
+
+  <div class="input-prepend date" data-date=" " data-date-format="dd-mm-yyyy">
+    <%= f.label :available_start %><br>
+    <input class="col-md-2" id="dp3" size="16" type="text" value=" " name="dogshare[available_day_start]">
+    <span class="add-on"><i class="icon-th"></i></span>
   </div>
-  <div class="field">
+  <br>
+
+  <div class="input-append date" data-date=" " data-date-format="dd-mm-yyyy">
     <%= f.label :available_end %><br>
-    <%= f.text_area :available_end %>
-  </div>
+    <input class="col-md-2" id="dp4" size="16" type="text" value=" " name="dogshare[available_day_end]">
+    <span class="add-on"><i class="icon-th"></i></span>
+  </div><br>
 
   <div class="actions">
     <%= f.submit %>
