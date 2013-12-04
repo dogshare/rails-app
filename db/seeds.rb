@@ -11,32 +11,30 @@
 
 charlotte = Person.create(:name => "Charlotte", 
   :zip => 11222, 
+  :person_snippet => "My dog Rocky is the coolest kid on the block!",
   :img => File.new("#{Rails.root}/db/demodata/profilecc.jpg"))
 sonja = Person.create(:name => "Sonja", 
   :zip => 22306, 
+  :person_snippet => "Dog-obsessed and without my four-legged companion in Manhattan - looking to walk pups!",
   :img => File.new("#{Rails.root}/db/demodata/profilesh.jpg"))
 evan = Person.create(:name => "Evan", 
+  :person_snippet => "Owner of Pesh (Peshmerga), a Kangal from the mountains of Iraq.",
   :zip => 22306, 
   :img => File.new("#{Rails.root}/db/demodata/profileej.jpg"))
 ken = Person.create(:name => "Ken", 
   :zip => 11221, 
+  :person_snippet => "Super is my greyhound who would love you to take him for runs while I work!",
   :img => "")
 
 # Creating sitters
-
-scott = Person.create(:name => "Scott", 
-  :zip => 11111, 
-  :available_start => '2012-11-14 14:27:46', 
-  :available_end => '2012-11-14 14:27:46', 
-  :person_snippet => "I love all animals", :img => "")
 rosie = Person.create(:name => "Rosie", 
   :zip => 22222, 
-  :person_snippet => "I have two cats and a dog", 
-  :img => "")
+  :person_snippet => "I live with a huge Airedale named Hondo that eats chocolate chips by the bag.", 
+  :img => File.new("#{Rails.root}/db/demodata/profilerh.jpg"))
 greg = Person.create(:name => "Greg", 
   :zip => 10003, 
-  :person_snippet => "I grew up with 2 dogs", 
-  :img => "")
+  :person_snippet => "I love dogs but don't own one. If you're in the East Village, let's talk!", 
+  :img => File.new("#{Rails.root}/db/demodata/profilege.jpg"))
 
 # Creating dogs and associating owners
 
