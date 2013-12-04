@@ -20,6 +20,10 @@
     <%= f.text_field :name %>
   </div>
   <div class="field">
+    <%= f.label :owner %><br>
+    <%= f.select(:owner_id, options_for_select(Person.all.map { |o| [o.name, o.id ]})) %>
+  </div>
+  <div class="field">
     <%= f.label :age %><br>
     <%= f.number_field :age %>
   </div>
@@ -53,16 +57,16 @@
     <%= f.text_area :special_needs %>
   </div>
 
-  <div class="input-prepend date" data-date=" " data-date-format="dd-mm-yyyy">
+  <div class="input-prepend date" data-date=" " data-date-format="mm/dd/yyyy">
     <%= f.label :available_start %><br>
-    <input class="col-md-2" id="dp3" size="16" type="text" value=" " name="dogshare[available_day_start]">
+    <input class="col-md-2" id="dp3" size="16" type="text" name="dog[available_start]">
     <span class="add-on"><i class="icon-th"></i></span>
   </div>
   <br>
 
-  <div class="input-append date" data-date=" " data-date-format="dd-mm-yyyy">
+  <div class="input-append date" data-date=" " data-date-format="mm/dd/yyyy">
     <%= f.label :available_end %><br>
-    <input class="col-md-2" id="dp4" size="16" type="text" value=" " name="dogshare[available_day_end]">
+    <input class="col-md-2" id="dp4" size="16" type="text" name="dog[available_end]">
     <span class="add-on"><i class="icon-th"></i></span>
   </div><br>
 

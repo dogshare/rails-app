@@ -1,6 +1,6 @@
 $(function() {
-  $('#dp3').datepicker();
-  $('#dp4').datepicker();
+  $('#dp3').datepicker({format:"dd/mm/yyyy"});
+  $('#dp4').datepicker({format:"dd/mm/yyyy"});
 
   //event listener then start and end date validation//
 
