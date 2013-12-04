@@ -7,11 +7,13 @@
 </div>
 
 <div class="bio">
+  <% if false %>
   <%= image_tag(@dog.owner.img.url(:thumb), :class => "img-circle") %>
   <p>
     <strong>Owner Name:</strong>
     <%= @dog.owner.name %>
   </p>
+  <% end %>
   <p>
   <strong>Age:</strong>
   <%= @dog.age %>
@@ -24,10 +26,12 @@
   <strong>Housetrained:</strong>
   <%= @dog.housetrained %>
   </p>
+  <% if false %>
   <p>
     <strong>Zip:</strong>
     <%= @dog.owner.zip %>
   </p>
+  <% end %>
 
 <!-- add for each dog share -->
   <p>
