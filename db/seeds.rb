@@ -28,16 +28,13 @@ evan = Person.create(:name => "Evan",
   :img => File.new("#{Rails.root}/db/demodata/profileej.jpg"),
   :available_start => "2014-01-01", 
   :available_end => "2014-01-12")
-
 ken = Person.create(:name => "Ken",
   :zip => 11221,
   :person_snippet => "Super is my greyhound who would love you to take him for runs while I work!",
   :bio => "We live in Brooklyn and both of us enjoy road trips, running on beaches, and long naps.",
-  :img => File.new("#{Rails.root}/db/demodata/profileken.jpg")),
+  :img => File.new("#{Rails.root}/db/demodata/profileken.jpg"),
   :available_start => "2013-05-12", 
   :available_end => "2014-01-05")
-
-
 # Creating sitters
 rosie = Person.create(:name => "Rosie", 
   :zip => 22222, 
