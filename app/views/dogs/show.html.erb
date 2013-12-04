@@ -6,7 +6,31 @@
   <p><em><%= @dog.dog_snippet %></em></p>
 </div>
 
-<div class="bio">
+
+<div class="col-sm-8">
+  <p>
+
+    <strong>Description:</strong>
+    <%= @dog.description %>
+  </p>
+
+  <p>
+    <strong>Temperament:</strong>
+    <%= @dog.temperament %>
+  </p>
+
+  <p>
+    <strong>Active:</strong>
+    <%= @dog.active %>
+  </p>
+
+  <p>
+    <strong>Special needs:</strong>
+    <%= @dog.special_needs %>
+  </p>
+</div>
+
+<div class="col-sm-4 center">
   <% if false %>
   <%= image_tag(@dog.owner.img.url(:thumb), :class => "img-circle") %>
   <p>
@@ -44,35 +68,12 @@
   </p>
 </div>
 
-<div class="main">
-  <p>
 
-    <strong>Description:</strong>
-    <%= @dog.description %>
-  </p>
-
-  <p>
-    <strong>Temperament:</strong>
-    <%= @dog.temperament %>
-  </p>
-
-  <p>
-    <strong>Active:</strong>
-    <%= @dog.active %>
-  </p>
-
-  <p>
-    <strong>Special needs:</strong>
-    <%= @dog.special_needs %>
-  </p>
-
-
+<div class="col-sm-12">
+  <%= link_to 'Back', dogs_path %>
+  <%= link_to 'Edit', edit_dog_path(@dog), class: "btn btn-lg btn-primary paragraph-btn" %> 
 </div>
 
-<%= link_to 'Edit', edit_dog_path(@dog), class: "btn btn-lg btn-primary paragraph-btn" %> |
-<%= link_to 'Back', dogs_path %>
+
   
-  <!-- <div class="actions">
-    <%#= f.submit 'Create Dog', class: "btn btn-lg btn-primary paragraph-btn" %>
-  </div> -->
 

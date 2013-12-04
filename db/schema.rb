@@ -13,10 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20131204162553) do
 
-  create_table "bio_to_people", force: true do |t|
-    t.text "Bio"
-  end
-
   create_table "dogs", force: true do |t|
     t.string   "name"
     t.integer  "age"

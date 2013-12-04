@@ -3,18 +3,17 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .center {
-  padding-top:2cm;
   margin-left:auto;
   margin-right:auto;
   text-align:center;
 }
 
 .bio {
-  padding-top: .3cm;
   margin-left: 20cm;
   border:1px solid;
   border-radius:20px;
   text-align: center;
+
 }
 
 .col-lg-4 {
@@ -24,6 +23,8 @@
 
 .main {
   margin-right: 11cm;
+  padding-top: .1cm;
+
 }
 
 .dog {
