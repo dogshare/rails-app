@@ -7,33 +7,25 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 # Creating owners
-charlotte = Person.create(:name => "Charlotte", :zip => 11222, :img => File.new("#{Rails.root}/db/demodata/profilecc.jpg"))
-sonja = Person.create(:name => "Sonja", :zip => 22306, :bio => "There once was a man from Nantucket
-Who kept all his cash in a bucket.
-    But his daughter, named Nan,
-    Ran away with a man
-And as for the bucket, Nantucket.")
-evan = Person.create(:name => "Evan", :snippet => "You only live once, but if you do it right, once is enough. 
-― Mae West" :zip => 22306)
-ken = Person.create(:name => "Ken", :zip => 11221)
-
-# Creating owners
-
 charlotte = Person.create(:name => "Charlotte", 
-  :zip => 11222, 
+  :zip => 11222,
   :person_snippet => "My dog Rocky is the coolest kid on the block!",
+  :bio => "I live in Brooklyn and would love for a caring person to come hang out with my personable Puggle, Rocky, while I'm at school and work!",
   :img => File.new("#{Rails.root}/db/demodata/profilecc.jpg"))
 sonja = Person.create(:name => "Sonja", 
   :zip => 22306, 
   :person_snippet => "Dog-obsessed and without my four-legged companion in Manhattan - looking to walk pups!",
+  :bio => "Formerly a humane society foster parent, I'm in Manhattan for school now and miss having cats and dogs around. I'd be down to go for runs on weekend mornings with your dog if you have a big, active pup.",
   :img => File.new("#{Rails.root}/db/demodata/profilesh.jpg"))
 evan = Person.create(:name => "Evan", 
-  :person_snippet => "Owner of Pesh (Peshmerga), a Kangal from the mountains of Iraq.",
-  :zip => 22306, 
+  :zip => 22306,
+  :person_snippet => "Big dogs welcome here.", 
+  :bio => "Owner of Pesh (Peshmerga), a Kangal from the mountains of Iraq. I'm down to run/walk big dogs in my area (LES).",
   :img => File.new("#{Rails.root}/db/demodata/profileej.jpg"))
-ken = Person.create(:name => "Ken", 
-  :zip => 11221, 
+ken = Person.create(:name => "Ken",
+  :zip => 11221,
   :person_snippet => "Super is my greyhound who would love you to take him for runs while I work!",
+  :bio => "We live in Brooklyn and both of us enjoy road trips, running on beaches, and long naps.",
   :img => "")
 
 # Creating sitters
