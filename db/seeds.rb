@@ -11,32 +11,48 @@ charlotte = Person.create(:name => "Charlotte",
   :zip => 11222,
   :person_snippet => "My dog Rocky is the coolest kid on the block!",
   :bio => "I live in Brooklyn and would love for a caring person to come hang out with my personable Puggle, Rocky, while I'm at school and work!",
-  :img => File.new("#{Rails.root}/db/demodata/profilecc.jpg"))
+  :img => File.new("#{Rails.root}/db/demodata/profilecc.jpg"),
+  :available_start => "2013-08-12", 
+  :available_end => "2014-01-06")
 sonja = Person.create(:name => "Sonja", 
   :zip => 22306, 
   :person_snippet => "Dog-obsessed and without my four-legged companion in Manhattan - looking to walk pups!",
   :bio => "Formerly a humane society foster parent, I'm in Manhattan for school now and miss having cats and dogs around. I'd be down to go for runs on weekend mornings with your dog if you have a big, active pup.",
-  :img => File.new("#{Rails.root}/db/demodata/profilesh.jpg"))
+  :img => File.new("#{Rails.root}/db/demodata/profilesh.jpg"),
+  :available_start => "2013-05-12", 
+  :available_end => "2014-05-11")
 evan = Person.create(:name => "Evan", 
   :zip => 22306,
   :person_snippet => "Big dogs welcome here.", 
   :bio => "Owner of Pesh (Peshmerga), a Kangal from the mountains of Iraq. I'm down to run/walk big dogs in my area (LES).",
-  :img => File.new("#{Rails.root}/db/demodata/profileej.jpg"))
+  :img => File.new("#{Rails.root}/db/demodata/profileej.jpg"),
+  :available_start => "2014-01-01", 
+  :available_end => "2014-01-12")
 ken = Person.create(:name => "Ken",
   :zip => 11221,
   :person_snippet => "Super is my greyhound who would love you to take him for runs while I work!",
   :bio => "We live in Brooklyn and both of us enjoy road trips, running on beaches, and long naps.",
+<<<<<<< HEAD
   :img => File.new("#{Rails.root}/db/demodata/profileken.jpg"))
+=======
+  :img => "",
+  :available_start => "2013-05-12", 
+  :available_end => "2014-01-05")
+>>>>>>> 2698b1816a826a43cbe9a9e4dec8732c7eb27a4b
 
 # Creating sitters
 rosie = Person.create(:name => "Rosie", 
   :zip => 22222, 
   :person_snippet => "I live with a huge Airedale named Hondo that eats chocolate chips by the bag.", 
-  :img => File.new("#{Rails.root}/db/demodata/profilerh.jpg"))
+  :img => File.new("#{Rails.root}/db/demodata/profilerh.jpg"),
+  :available_start => "2013-05-12", 
+  :available_end => "2014-01-09")
 greg = Person.create(:name => "Greg", 
   :zip => 10003, 
   :person_snippet => "I love dogs but don't own one. If you're in the East Village, let's talk!", 
-  :img => File.new("#{Rails.root}/db/demodata/profilege.jpg"))
+  :img => File.new("#{Rails.root}/db/demodata/profilege.jpg"),
+  :available_start => "2013-05-12", 
+  :available_end => "2014-01-02")
 
 # Creating dogs and associating owners
 
@@ -52,8 +68,8 @@ rocky = Dog.create(:owner => charlotte,
   :special_needs => "none", 
   :dog_snippet => "athletic little monster!", 
   :img => File.new("#{Rails.root}/db/demodata/profilerocky.jpg"), 
-  :available_start => "", 
-  :available_end => "") 
+  :available_start => "2013-05-12", 
+  :available_end => "2014-01-05") 
 
 lucy = Dog.create(:owner => sonja, 
   :name => "Lucyhawk", 
@@ -67,8 +83,8 @@ lucy = Dog.create(:owner => sonja,
   :special_needs => "anxiety medication", 
   :dog_snippet => "I'm a loyal companion.", 
   :img => File.new("#{Rails.root}/db/demodata/profilelucy.jpg"),
-  :available_start => "", 
-  :available_end => "")
+  :available_start => "2013-05-12", 
+  :available_end => "2014-01-05")
 
 pesh = Dog.create(:owner => evan, 
   :name => "Peshmerga", 
@@ -82,8 +98,8 @@ pesh = Dog.create(:owner => evan,
   :special_needs => "vegetarian; poultry allergies", 
   :dog_snippet => "I love long walks throughout New Mexico.", 
   :img => File.new("#{Rails.root}/db/demodata/profilepesh.jpg"),
-  :available_start =>"", 
-  :available_end => "")
+  :available_start => "2013-05-12", 
+  :available_end => "2014-01-05")
 
 lester = Dog.create(:owner => sonja, 
   :name => 'Lester', 
@@ -97,8 +113,8 @@ lester = Dog.create(:owner => sonja,
   :special_needs => 'none', 
   :dog_snippet => "I see with my nose.", 
   :img => File.new("#{Rails.root}/db/demodata/profilelester.jpg"), 
-  :available_start => "", 
-  :available_end => "")
+  :available_start => "2013-05-12", 
+  :available_end => "2014-01-05")
 
 adult_supervision = Dog.create(:owner => ken, 
   :name => 'Super', 
@@ -111,9 +127,11 @@ adult_supervision = Dog.create(:owner => ken,
   :picture => true, 
   :special_needs => 'none', 
   :dog_snippet => "I run circles around all the cool kids!", 
-  :img => File.new("#{Rails.root}/db/demodata/profilesuper.jpg"), 
-  :available_start => "", 
-  :available_end => "")
+
+  :img => File.new("#{Rails.root}/db/demodata/profilesuper.jpg"),  
+  :available_start => "2013-05-12", 
+  :available_end => "2014-01-05")
+
 
 
 

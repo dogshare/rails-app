@@ -33,11 +33,11 @@
 <div class="col-sm-4 bio">
   <% if false %>
   <%= image_tag(@dog.owner.img.url(:thumb), :class => "img-circle") %>
+  <% end %>
   <p>
     <strong>Owner Name:</strong>
     <%= @dog.owner.name %>
   </p>
-  <% end %>
   <p>
   <strong>Age:</strong>
   <%= @dog.age %>
@@ -56,8 +56,6 @@
     <%= @dog.owner.zip %>
   </p>
   <% end %>
-
-<!-- add for each dog share -->
 
   <p>
     <strong>Available from:</strong>
