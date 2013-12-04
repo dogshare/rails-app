@@ -3,7 +3,7 @@ class Dog < ActiveRecord::Base
   has_many :sitters, :through => :dogshares, :class_name => "Person"
   has_many :dogshares
 
-  has_attached_file :img, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "/images/:style/missing.png"
+  has_attached_file :img, :styles => {:large => "500x500>", :medium => "300x300>", :thumb => "200x200>" }, :default_url => ":style/dogicon.jpg"
 
   # validates_attachment_presence :photo
   # validates_attachment_size :photo, :less_than => 5.megabytes

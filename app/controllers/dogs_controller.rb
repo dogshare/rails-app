@@ -10,6 +10,7 @@ class DogsController < ApplicationController
   # GET /dogs/1
   # GET /dogs/1.json
   def show
+
   end
 
   # GET /dogs/new
@@ -73,7 +74,6 @@ class DogsController < ApplicationController
       params.require(:dog).permit(:img, :name, :age, :breed, :description, :temperament, :active, :housetrained, :picture, :special_needs)
     end
 end
-
 
 
 

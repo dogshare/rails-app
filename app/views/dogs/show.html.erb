@@ -35,7 +35,6 @@
     <%= @dog.dogshares.first.available_day_start %><br>
     <strong>Available to:</strong>
     <%= @dog.dogshares.first.available_day_end %>
-
 </div>
 
 <div class="main">
@@ -64,6 +63,6 @@
 </div>
 
 <%= link_to 'Edit', edit_dog_path(@dog) %> |
-<%= link_to 'Back', dogs_path %>
-<%= link_to 'Add a dogshare', new_dogshare_path %>
+<%= link_to 'Back', dogs_path %> |
+<%= link_to 'Add availability', new_dogshare_path %>
 
