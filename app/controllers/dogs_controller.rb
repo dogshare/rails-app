@@ -71,7 +71,7 @@ class DogsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def dog_params
-      params.require(:dog).permit(:img, :name, :age, :breed, :description, :temperament, :active, :housetrained, :picture, :special_needs)
+      params.require(:dog).permit(:img, :name, :age, :breed, :description, :temperament, :active, :housetrained, :picture, :special_needs, :available_start, :available_end)
     end
 end
 
