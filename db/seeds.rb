@@ -9,42 +9,23 @@
 # Creating owners
 charlotte = Person.create(:name => "Charlotte", 
   :zip => 11222,
-  :person_snippet => "I'm the proud best friend of the coolest kid on the block (Rocky, obviously).",
+  :person_snippet => "My dog Rocky is the coolest kid on the block!",
   :bio => "I live in Brooklyn and would love for a caring person to come hang out with my personable Puggle, Rocky, while I'm at school and work!",
   :img => File.new("#{Rails.root}/db/demodata/profilecc.jpg"))
 sonja = Person.create(:name => "Sonja", 
   :zip => 22306, 
-  :person_snippet => "Can't wait to walk some dogs in Chinatown/LES!",
+  :person_snippet => "Dog-obsessed and without my four-legged companion in Manhattan - looking to walk pups!",
   :bio => "Formerly a humane society foster parent, I'm in Manhattan for school now and miss having cats and dogs around. I'd be down to go for runs on weekend mornings with your dog if you have a big, active pup.",
-  :img => File.new("#{Rails.root}/db/demodata/profilecc.jpg"))
+  :img => File.new("#{Rails.root}/db/demodata/profilesh.jpg"))
 evan = Person.create(:name => "Evan", 
   :zip => 22306,
   :person_snippet => "Big dogs welcome here.", 
-  :bio => "My dog Pesh lives with my parents in New Mexico. That said, I miss him! Would love to hang out with difficult, hard-to-manage dogs that remind me of him.",
-  :img => File.new("#{Rails.root}/db/demodata/profilecc.jpg"))
+  :bio => "Owner of Pesh (Peshmerga), a Kangal from the mountains of Iraq. I'm down to run/walk big dogs in my area (LES).",
+  :img => File.new("#{Rails.root}/db/demodata/profileej.jpg"))
 ken = Person.create(:name => "Ken",
   :zip => 11221,
-  :person_snippet => "Dogs, dogs, dogs. Gotta love 'em!",
-  :bio => "Super is my greyhound who used to race. We live in Brooklyn. Come take him for walks while I'm working!",
-  :img => "")
-
-# Creating owners
-
-charlotte = Person.create(:name => "Charlotte", 
-  :zip => 11222, 
-  :person_snippet => "My dog Rocky is the coolest kid on the block!",
-  :img => File.new("#{Rails.root}/db/demodata/profilecc.jpg"))
-sonja = Person.create(:name => "Sonja", 
-  :zip => 22306, 
-  :person_snippet => "Dog-obsessed and without my four-legged companion in Manhattan - looking to walk pups!",
-  :img => File.new("#{Rails.root}/db/demodata/profilesh.jpg"))
-evan = Person.create(:name => "Evan", 
-  :person_snippet => "Owner of Pesh (Peshmerga), a Kangal from the mountains of Iraq.",
-  :zip => 22306, 
-  :img => File.new("#{Rails.root}/db/demodata/profileej.jpg"))
-ken = Person.create(:name => "Ken", 
-  :zip => 11221, 
   :person_snippet => "Super is my greyhound who would love you to take him for runs while I work!",
+  :bio => "We live in Brooklyn and both of us enjoy road trips, running on beaches, and long naps.",
   :img => "")
 
 # Creating sitters
