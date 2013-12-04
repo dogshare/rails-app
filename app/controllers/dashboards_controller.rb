@@ -4,5 +4,8 @@ class DashboardsController < ApplicationController
   
   def index
   end
+
+  def register
+  end
  
 end

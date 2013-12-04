@@ -1,0 +1,29 @@
+.feature-img { 
+  height: 200px;
+  width: auto;
+  border-radius: 10px;
+}
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.paragraph-caption {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.paragraph-btn {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  font-size: 15px;
+}
+
+.p-1 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}

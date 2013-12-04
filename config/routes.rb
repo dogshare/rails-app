@@ -10,6 +10,8 @@ RailsApp::Application.routes.draw do
  
   root 'dashboards#index'
 
+  get '/register' => 'dashboards#register'
+
   
 
   # root_path  GET   /   dashboard#index
