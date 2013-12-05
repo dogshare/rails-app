@@ -3,9 +3,9 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .center {
-  margin-left:auto;
-  margin-right:auto;
-  text-align:center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .bio {
@@ -26,4 +26,25 @@
 .dog {
   text-align: center;
   padding: 0px 40px 0px 40px;
+}
+
+.dog-btn {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  font-size: 14px;
+}
+
+.dog-p-left {
+  padding: 40px 20px 20px 70px;
+}
+
+.dog-p-right {
+padding: 20px;
+}
+
+.owner-box {
+  background-color: #CCFFFF;
+  margin: 5px 130px;
+  padding: 5px;
 }

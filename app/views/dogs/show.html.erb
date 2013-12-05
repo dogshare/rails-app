@@ -7,7 +7,7 @@
 </div>
 
 
-<div class="col-sm-6">
+<div class="col-sm-6 dog-p-left">
   <p>
 
     <strong>Description:</strong>
@@ -30,16 +30,22 @@
   </p>
 </div>
 
-<div class="col-sm-6 center">
+<div class="col-sm-6 center dog-p-right">
 
   <% if false %>
   <%= image_tag(@dog.owner.img.url(:thumb), :class => "img-circle") %>
   <% end %>
-  <p>
-    <strong>Owner:</strong>
-    <%= link_to @dog.owner.name, person_path(@dog.owner.id) %>
-  </p>
-  <p>
+  <div class="owner-box">
+    <p>
+      <strong>Owner:</strong>
+        <%= link_to @dog.owner.name, person_path(@dog.owner.id) %>
+      </p>
+      <p>
+      <strong>Zip:</strong>
+        <%= @dog.owner.zip %>
+      </p>
+      <p>
+    </div>
   <strong>Age:</strong>
   <%= @dog.age %>
   </p>
@@ -49,14 +55,11 @@
   </p>
   <p>
   <strong>Housetrained:</strong>
-  <%= @dog.housetrained %>
+  <%= if @dog.housetrained == true 
+    "yes"
+    else "no"
+    end %>
   </p>
-  <% if false %>
-  <p>
-    <strong>Zip:</strong>
-    <%= @dog.owner.zip %>
-  </p>
-  <% end %>
 
   <p>
     <strong>Available from:</strong>
@@ -67,10 +70,10 @@
   </p>
 </div>
 
-<div class="col-sm-2">
 
-  <%= link_to 'Back', dogs_path %>
-  <%= link_to 'Edit', edit_dog_path(@dog), class: "btn btn-lg btn-primary paragraph-btn" %> 
+<div class="col-sm-12 center">
+    <%= link_to 'Back to Dogs', dogs_path %>
+    <%= link_to 'Edit', edit_dog_path(@dog), class: "btn btn-lg btn-primary dog-btn" %>
 </div>
 
 

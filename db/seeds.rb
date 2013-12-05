@@ -37,7 +37,6 @@ ken = Person.create(:name => "Ken",
   :available_start => "2013-05-12", 
   :available_end => "2014-01-05")
 
-
 # Creating sitters
 rosie = Person.create(:name => "Rosie", 
   :zip => 22222, 
@@ -122,7 +121,7 @@ adult_supervision = Dog.create(:owner => ken,
   :name => 'Super', 
   :age => '6', 
   :breed => 'Greyhound', 
-  :description => 'Greyhounds were bred for thousands of years to hunt and prey. There is evidence of a Greyhound like dog dating back to 6000 B.C. in Turkey. However, in ancient Egypt, is where Greyhounds made their mark. Not only were the dogs hunting partners, they were also companions that were particularly worshiped by the Egyptians. The Greyhounds were mummified and buried along with their owners. They are the only breed of dog mentioned in the Bible.', 
+  :description => 'Greyhounds were bred for thousands of years to hunt and prey. There is evidence of a Greyhound like dog dating back to 6000 B.C. in Turkey. However, Greyhounds made their mark in ancient Egypt. Not only were the dogs hunting partners, they were also companions that were worshiped by the Egyptians. The Greyhounds were mummified and buried with their owners. They are the only breed of dog mentioned in the Bible.', 
   :temperament => 'reserved', 
   :active => 'when he wants to be', 
   :housetrained => true, 

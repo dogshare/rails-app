@@ -44,6 +44,48 @@
 <%= link_to 'Back to Doglovers', people_path %>
   <%= link_to 'Edit', edit_person_path(@person), class: "btn btn-lg btn-primary paragraph-btn" %> 
 
+<div class="centered">
+  <p id="notice"><%= notice %></p>
+
+  <p>
+    <%= image_tag(@person.img.url(:medium), :class => "img-circle") %>
+  </p>
+
+  <p>
+    <strong>Name:</strong>
+    <%= @person.name %>
+  </p>
+
+  <p>
+    <strong>Zip:</strong>
+    <%= @person.zip %>
+  </p>
+
+  <div class="col-md-10 center-people">
+    <p>
+      <strong>Bio:</strong>
+      <%= @person.bio %>
+    </p>
+  </div>
+
+  <!-- <p>
+    <strong>Dogs:</strong>
+    <#%= @person.dog.name %>
+  </p> -->
+  <div class="col-md-6 center-people">
+    <p>
+      <strong>Available from:</strong>  
+      <%= @person.available_start %><br>
+      <strong>Available to:</strong>
+      <%= @person.available_end %>
+    </p>
+  </div>
+  <br>
+  
+    <%= link_to 'Back to Doglovers', people_path %><br>
+      <%= link_to 'Edit', edit_person_path(@person), class: "btn btn-lg btn-primary paragraph-btn" %>
+>>>>>>> 67e20a893adeb901ecbc4daf40aeacb8f67711fc
+
 </div>
 <div class="col-md-3">
   </div>
