@@ -3,4 +3,31 @@
   min-width: 100%;
 }
 
+.container {
+  width: 1170px;
+}
+
+@media screen and (min-width: 1680px) {
+
+  .container {
+    width: 1680px;
+  }
+
+  #myCarousel {
+    height: 718px;
+  }
+
+  .item, .item.active {
+   height: 718px;
+  }
+
+  .home-img { 
+    max-height: 718px;
+    min-width: 100%;
+  }
+
+}
+
+
+
 
