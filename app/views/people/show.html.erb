@@ -1,10 +1,15 @@
-<div class="centered">
+<div class="row">
+  <div class="col-md-3">
+  </div>
+
+<div class="col-md-6 centered">
+
 <p id="notice"><%= notice %></p>
 
 <p>
   <%= image_tag(@person.img.url(:medium), :class => "img-circle") %>
 </p>
-
+  
 <p>
   <strong>Name:</strong>
   <%= @person.name %>
@@ -32,7 +37,14 @@
   <%= @person.available_end %>
 </p>
 
+<strong><a href="mailto:<%= @person.email %>">Contact <%= @person.name %></a> 
+</strong> 
+<br>
+
 <%= link_to 'Back to Doglovers', people_path %>
   <%= link_to 'Edit', edit_person_path(@person), class: "btn btn-lg btn-primary paragraph-btn" %> 
 
+</div>
+<div class="col-md-3">
+  </div>
 </div>

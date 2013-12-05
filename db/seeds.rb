@@ -13,7 +13,8 @@ charlotte = Person.create(:name => "Charlotte",
   :bio => "I live in Brooklyn and would love for a caring person to come hang out with my personable Puggle, Rocky, while I'm at school and work!",
   :img => File.new("#{Rails.root}/db/demodata/profilecc.jpg"),
   :available_start => "2013-08-12", 
-  :available_end => "2014-01-06")
+  :available_end => "2014-01-06",
+  :email => "charlottechang.ny@gmail.com")
 sonja = Person.create(:name => "Sonja", 
   :zip => 22306, 
   :person_snippet => "Dog-obsessed and without my four-legged companion in Manhattan - looking to walk pups!",
@@ -32,13 +33,10 @@ ken = Person.create(:name => "Ken",
   :zip => 11221,
   :person_snippet => "Super is my greyhound who would love you to take him for runs while I work!",
   :bio => "We live in Brooklyn and both of us enjoy road trips, running on beaches, and long naps.",
-<<<<<<< HEAD
-  :img => File.new("#{Rails.root}/db/demodata/profileken.jpg"))
-=======
-  :img => "",
+  :img => File.new("#{Rails.root}/db/demodata/profileken.jpg"),
   :available_start => "2013-05-12", 
   :available_end => "2014-01-05")
->>>>>>> 2698b1816a826a43cbe9a9e4dec8732c7eb27a4b
+
 
 # Creating sitters
 rosie = Person.create(:name => "Rosie", 

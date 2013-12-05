@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131204162553) do
+ActiveRecord::Schema.define(version: 20131205004947) do
 
   create_table "dogs", force: true do |t|
     t.string   "name"
@@ -59,6 +59,7 @@ ActiveRecord::Schema.define(version: 20131204162553) do
     t.date     "available_start"
     t.date     "available_end"
     t.text     "bio"
+    t.string   "email"
   end
 
 end
