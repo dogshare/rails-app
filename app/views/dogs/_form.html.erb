@@ -19,39 +19,47 @@
     <%= f.label :name %><br>
     <%= f.text_field :name %>
   </div>
+
   <div class="field">
     <%= f.label :owner %><br>
     <%= f.select(:owner_id, options_for_select(Person.all.map { |o| [o.name, o.id ]})) %>
   </div>
+  
+  <div class="field">
+    <%= f.label :dog_snippet %><br>
+    <%= f.text_field :dog_snippet %>
+  </div>
+
   <div class="field">
     <%= f.label :age %><br>
     <%= f.number_field :age %>
   </div>
+
   <div class="field">
     <%= f.label :breed %><br>
     <%= f.text_field :breed %>
   </div>
-  
+
   <div class="field">
     <%= f.label :description %><br>
     <%= f.text_area :description %>
   </div>
+
   <div class="field">
     <%= f.label :temperament %><br>
     <%= f.text_field :temperament %>
   </div>
+
   <div class="field">
     <%= f.label :active %><br>
     <%= f.text_field :active %>
   </div>
+
   <div class="field">
     <%= f.label :housetrained %><br>
     <%= f.check_box :housetrained %>
   </div>
-   <div class="field">
-    <%= f.label :dog_snippet %><br>
-    <%= f.text_field :dog_snippet %>
-  </div>
+
   <div class="field">
     <%= f.label :special_needs %><br>
     <%= f.text_area :special_needs %>

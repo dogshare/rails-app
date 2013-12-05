@@ -40,6 +40,10 @@
     <%= link_to @dog.owner.name, person_path(@dog.owner.id) %>
   </p>
   <p>
+  <strong>Zip:</strong>
+    <%= @dog.owner.zip %>
+  </p>
+  <p>
   <strong>Age:</strong>
   <%= @dog.age %>
   </p>
@@ -49,14 +53,11 @@
   </p>
   <p>
   <strong>Housetrained:</strong>
-  <%= @dog.housetrained %>
+  <%= if @dog.housetrained == true 
+    "yes"
+    else "no"
+    end %>
   </p>
-  <% if false %>
-  <p>
-    <strong>Zip:</strong>
-    <%= @dog.owner.zip %>
-  </p>
-  <% end %>
 
   <p>
     <strong>Available from:</strong>
