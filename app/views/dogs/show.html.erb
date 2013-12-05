@@ -30,7 +30,7 @@
   </p>
 </div>
 
-<div class="col-sm-6 center dog-p-right">
+<div class="col-lg-6 center dog-p-right">
 
   <% if false %>
   <%= image_tag(@dog.owner.img.url(:thumb), :class => "img-circle") %>
@@ -39,12 +39,12 @@
     <p>
       <strong>Owner:</strong>
         <%= link_to @dog.owner.name, person_path(@dog.owner.id) %>
-      </p>
-      <p>
+    </p>
+    <p>
       <strong>Zip:</strong>
         <%= @dog.owner.zip %>
-      </p>
-      <p>
+    </p>
+    <p>
     </div>
   <strong>Age:</strong>
   <%= @dog.age %>
@@ -71,10 +71,11 @@
 </div>
 
 
-<div class="col-sm-12 center">
-    <%= link_to 'Back to Dogs', dogs_path %>
+  <div class="edit-btn">
+    <p><%= link_to 'Back to Dogs', dogs_path %></p>
     <%= link_to 'Edit', edit_dog_path(@dog), class: "btn btn-lg btn-primary dog-btn" %>
-</div>
+  </div>
+
 
 
   

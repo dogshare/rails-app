@@ -17,6 +17,11 @@
   padding-bottom:1cm;
 }
 
+.col-lg-6 {
+  text-align:center;
+  padding-bottom:1cm;
+}
+
 .main {
   margin-right: 11cm;
   padding-top: .1cm;
@@ -37,7 +42,7 @@
 }
 
 .dog-p-left {
-  padding: 40px 20px 20px 70px;
+  padding: 40px 20px 20px 200px;
 }
 
 .dog-p-right {
@@ -45,7 +50,10 @@ padding: 20px;
 }
 
 .owner-box {
-  background-color: #CCFFFF;
   margin: 5px 130px;
   padding: 5px;
+}
+
+.edit-btn {
+  text-align: center;
 }
