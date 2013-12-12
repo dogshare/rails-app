@@ -21,6 +21,18 @@ role :app, server_ip
 role :web, server_ip
 role :db, server_ip, :primary => true
 
+namespace :logs do
+  desc "tail production log files" 
+  task :production, :roles => :app do
+    trap("INT") { puts 'Interupted'; exit 0; }
+    run "tail -f #{shared_path}/log/production.log" do |channel, stream, data|
+      puts  # for an extra line break before the host name
+      puts "#{channel[:host]}: #{data}" 
+      break if stream == :err
+    end
+  end
+end
+
 namespace :deploy do
   task :start, :roles => :app do
     run "touch #{current_release}/tmp/restart.txt"
@@ -90,4 +102,4 @@ namespace :db do
 end
 
 after "deploy:setup",           "db:setup"   unless fetch(:skip_db_setup, false)
-after "deploy:finalize_update", "db:symlink"
+after "deploy:finalize_update", "db:symlink"  
