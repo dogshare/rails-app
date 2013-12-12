@@ -7,22 +7,22 @@
   width: 1170px;
 }
 
-@media screen and (min-width: 1680px) {
+@media screen and (min-width: 1836px) {
 
   .container {
-    width: 1680px;
+    width: 1836px;
   }
 
   #myCarousel {
-    height: 718px;
+    height: 785px;
   }
 
   .item, .item.active {
-   height: 718px;
+   height: 785px;
   }
 
   .home-img { 
-    max-height: 718px;
+    max-height: 785px;
     min-width: 100%;
   }
 
