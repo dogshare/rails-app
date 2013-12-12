@@ -4,12 +4,13 @@ class DogsController < ApplicationController
   # GET /dogs
   # GET /dogs.json
   def index
-    @dogs = Dog.all
 
     @dogs = Dog.all
+
     @hash = Gmaps4rails.build_markers(@dogs) do |dog, marker|
-    marker.lat dog.latitude
-    marker.lng dog.longitude
+      # raise
+    marker.lat 40.705353 #dog.latitude
+    marker.lng -74.013745 #dog.longitude
 end
   end
 

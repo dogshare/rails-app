@@ -37,8 +37,12 @@ group :doc do
 end
 
 gem 'gmaps4rails'
+gem 'underscore-rails'
+
 
 group :development, :test do
+  gem "better_errors"
+  gem "binding_of_caller"
   gem 'capistrano', '~>2.0'
   gem 'rvm-capistrano'
 end
