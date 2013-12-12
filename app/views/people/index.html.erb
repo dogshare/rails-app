@@ -1,8 +1,13 @@
 <link href="../assets/stylesheets/bootstrap.css" rel="stylesheet">
 
-<!-- <p><a class="btn btn-default" href="<%= new_person_path %>" role="button">I'm a new doglover</a></p> -->
+<div class="header_1"><h3>Introduce your dog to new people friends nearby.</h3></div>
+<div id="map" data-owner-locations='<%=raw @hash.to_json %>'>
+</div>
 
 <div class="container marketing">
+  <br>
+  <br>
+  <br>
   <% count = 0 %>
   <% @people.each_slice(3) do |slice| %>
     <div class="row">

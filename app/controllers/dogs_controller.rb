@@ -83,8 +83,3 @@ class DogsController < ApplicationController
       params.require(:dog).permit(:img, :name, :age, :breed, :description, :temperament, :active, :housetrained, :picture, :special_needs, :available_start, :available_end, :owner_id, :dog_snippet)
     end
 end
-
-
-
-
-
