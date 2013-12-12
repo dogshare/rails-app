@@ -36,14 +36,13 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-<<<<<<< HEAD
 gem 'gmaps4rails'
-=======
+
 group :development, :test do
   gem 'capistrano', '~>2.0'
   gem 'rvm-capistrano'
 end
->>>>>>> f85d1646b0da756166a77552e94b9507c6c194ef
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'

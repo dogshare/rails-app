@@ -60,11 +60,8 @@ GEM
     coffee-script-source (1.6.3)
     erubis (2.7.0)
     execjs (2.0.2)
-<<<<<<< HEAD
     gmaps4rails (2.1.1)
-=======
     highline (1.6.20)
->>>>>>> f85d1646b0da756166a77552e94b9507c6c194ef
     hike (1.2.3)
     i18n (0.6.5)
     jbuilder (1.5.2)
