@@ -10,8 +10,8 @@ class DogsController < ApplicationController
 
     @hash = Gmaps4rails.build_markers(@dogs) do |dog, marker|
 
-    marker.lat 40.705353 #dog.latitude
-    marker.lng -74.013745 #dog.longitude
+    marker.lat 40.705353111111 #dog.latitude
+    marker.lng -74.013745111111 #dog.longitude
     end
 
   end
