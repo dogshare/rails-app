@@ -9,4 +9,12 @@ $(function(){
     handler.fitMapToBounds();
   });
 
+  $("#map-toggle").click(function() {
+    $("#map").slideToggle("slow", function() {
+    //   var center = Gmaps.map.map.getCenter();
+    //   google.maps.event.trigger(map, 'resize');
+    //   Gmaps.map.map.setCenter(center);    
+    });
+  });
+
 });
