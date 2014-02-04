@@ -4,5 +4,6 @@
 * Rails version 4.0.1
 * DB: postgresql
 * Database creation: `rake db:migrate` `rake db:seed`
+* Assets need to be precompiled: `RAILS_ENV=production bundle exec rake assets:precompile`
 * This is deployed at: http://nameless-hollows-9106.herokuapp.com/ or http://enigmatic-forest-6389.herokuapp.com/
 
