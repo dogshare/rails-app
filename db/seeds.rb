@@ -26,7 +26,7 @@ evan = Person.create(:name => "Evan",
   :zip => 22306,
   :person_snippet => "Big dogs welcome here.", 
   :bio => "Owner of Pesh (Peshmerga), a Kangal from the mountains of Iraq. I'm down to run/walk big dogs in my area (LES).",
-  :img => File.new("#{Rails.root}/db/demodata/profileej.jpg"),
+  # :img => File.new("#{Rails.root}/db/demodata/profileej.jpg"),
   :available_start => "2014-01-01", 
   :available_end => "2014-01-12")
 ken = Person.create(:name => "Ken",
