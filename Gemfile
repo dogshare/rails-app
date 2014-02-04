@@ -59,3 +59,7 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+# required for heroku to serve static assets, as explained by
+# https://devcenter.heroku.com/articles/ruby-support#injected-plugins
+gem 'rails_serve_static_assets'
